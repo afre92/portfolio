@@ -84,35 +84,12 @@
       </div>
     </section>
 
-    <!-- Download Section -->
     <section id="download" >
-      <!-- class="download-section content-section text-center" -->
-      <!-- <div class="container2"> -->
-        <!-- <div class="col-lg-8 mx-auto"> -->
-          <!-- <div id="myimages">
-            <img src="img/1.jpg" style="width: 30%;"/>
-            <img src="img/1.jpg" style="width: 30%;"/>
-            <img src="img/1.jpg" style="width: 30%;"/>
-          </div> -->
-          <!-- <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
-        <!-- </div> -->
-      <!-- -->
-      <!-- <div class="container"> -->
-        <!-- <div class="mx-auto"> -->
-
-      <div >
-  <!-- <div id="small-img"> -->
-    <!-- <ul style="list-style: none; padding-left: 0;" style="width:100%"> -->
-      <!-- <li> -->
-        <img src="http://placehold.it/450x300" style="display: inline;" class=" inline-block img-respon "/>
-        <img src="http://placehold.it/450x300" style="display: inline;"class=" inline-block img-respon " />
-        <img src="http://placehold.it/450x300" style="display: inline;" class=" inline-block img-respon"/>
-        <img src="http://placehold.it/450x300" style="display: inline;" class=" inline-block img-respon "/>
-        <img src="http://placehold.it/450x300" style="display: inline;"class=" inline-block img-respon " />
-        <img src="http://placehold.it/450x300" style="display: inline;" class=" inline-block img-respon"/>
-</div>
+      <!-- <br/> -->
+      <h2 class="about-me" style="padding-bottom: 50px; text-align:center;">WORK</h2>
+      <div>
+        <img src="http://placehold.it/450x300" class=" inline-block img-respon "/><img src="http://placehold.it/450x300" class=" inline-block img-respon " /><img src="http://placehold.it/450x300" class=" inline-block img-respon"/><img src="http://placehold.it/450x300" class=" inline-block img-respon "/><img src="http://placehold.it/450x300" class=" inline-block img-respon " /><img src="http://placehold.it/450x300" class=" inline-block img-respon"/>
+      </div>
     </section>
 
     <!-- Contact Section -->
@@ -120,7 +97,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
+            <h2>Contact <span class="about-me">me</span></h2>
             <p>Feel free to leave us a comment on the
               <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
               on Start Bootstrap to give some feedback about this theme!</p>
@@ -183,8 +160,14 @@
 }
 
 img.img-respon {
-    width: 33%;
+    width: 33.33%;
     height: auto;
+    font-size: 0;
+}
+
+#download {
+  padding-top: 100px;
+  padding-bottom: 100px
 }
 
 @media only screen and (max-width: 769px) {
@@ -198,6 +181,12 @@ img.img-respon {
   img.img-respon {
       width: 100%;
       height: auto;
+      display: inline;
+  }
+
+  #download {
+    padding-top: 150px;
+    padding-bottom: 150px
   }
 }
 /*#myimages {
