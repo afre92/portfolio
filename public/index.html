@@ -90,12 +90,15 @@
       <!-- <div> -->
         <!-- <img src="img/ardan2.PNG" class=" inline-block img-respon"/><img src="img/trate2.PNG" class=" inline-block img-respon" /></div><img src="img/tailor2.PNG" class=" inline-block img-respon"/><img src="img/hotel2.PNG" class=" inline-block img-respon"/><img src="img/servi2.PNG" class=" inline-block img-respon" /><img src="img/wyncode2.PNG" class=" inline-block img-respon"/></div> -->
 <div class="row ">
-  <div class="block row-img"><img src="img/ardan2.PNG" class=" inline-block "/></div>
-  <div class="block row-img"><img src="img/trate2.PNG" class=" inline-block "/></div>
-  <div class="block row-img"><img src="img/tailor2.PNG" class=" inline-block "/></div>
-  <div class="block row-img"><img src="img/hotel2.PNG" class=" inline-block "/></div>
-  <div class="block row-img"><img src="img/servi2.PNG" class=" inline-block "/></div>
-  <div class="block row-img"><img src="img/wyncode2.PNG" class=" inline-block "/></div>
+  <div class="block row-img"><img src="img/ardan2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">ARDAN</h5>They are my current employer, we are a High-Performance Development and Training group that has the know-how and experience to help you build and deliver reliable solutions!</span></div></div>
+  <div class="block row-img"><img src="img/trate2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">TOUCHRATE</h5>They specialize in consumer facing touchscreen Sales & marketing-Assist Solutions. As part of this awesome team
+        I was in charge of developing a user-friendly plataform manipulating and showing data obtained from a REST API.</span></div></div>
+  <div class="block row-img"><img src="img/tailor2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">TAILORUP</h5>Caveat gave us the chance of develop a solution for their tailoring business. We created an app that allows local users create appointments
+        with tailors in just 3 simple steps.  I was in charge of some of the front end and the logic behind the appointments.</span></div></div>
+  <div class="block row-img"><img src="img/hotel2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">BOOKING SYSTEM</h5>This app was develop as part of the interview process for a company called 71 LBS. This booking system allows you to
+        create rooms and book them, it only allows you to book the rooms if exists or if its available, avoiding the overlapping of dates.</span></div></div>
+  <div class="block row-img"><img src="img/servi2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">SERVI</h5>Servi is a product of Ardan that allows you to keep track of your employees, work orders, customers and invoices at the office or on site. I have worked in several part of this great product, feel free to sign up and try it out!</span></div></div>
+  <div class="block row-img"><img src="img/wyncode2.PNG" class=" inline-block "/><div class="bueno"><span><h5 class="work-title">WYNCODE</h5>Wyncode is a development bootcamp immersing ambitious individuals in a demanding and inspiring learning environment engineered to develop successful coders with business acumen. Here I work as a TA helping others learn to code.</span></div></div>
 </div>
       <!-- </div> -->
     </section>
@@ -167,7 +170,15 @@
   color: #42dca3;  /*#32aaff;*/
 }
 
-
+.bueno{
+  width: 80%
+  position: absolute;
+top: 50%;
+left: 50%;
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
 .row-img {
   position: relative;
   width: 100%;
@@ -175,21 +186,47 @@
   padding-right: 0 !important;
   text-align: center;
 }
+
+.row-img div{
+ position: absolute;
+ /*bottom: 40%;*/
+ /*top: 40%*/
+ /*right: 0;*/
+ /*background: black;*/
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.7s linear;
+ transition: visibility 0s, opacity 0.7s linear;
+ z-index: 10;
+}
+
+.row-img:hover div{
+ width: 95%;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 1;
+}
+
 .block {
   width: 33.33%;
   display: inline-block;
   zoom: 1;
 }
-
+.work-title{
+  margin-bottom: 15px;
+}
 .row-img:after {
     content:'\A';
     position:absolute;
     width:100%; height:100%;
     top:0; left:0;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.7);
     opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
 }
 .row-img:hover:after {
     opacity:1;
