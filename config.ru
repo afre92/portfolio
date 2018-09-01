@@ -1,5 +1,4 @@
-
-use Rack::SSL,
+use Rack::SSL if ENV['FORCE_SSL'] == '1',
   :urls => ["/img","/css","/js","/scss","/vendor"],
   :root => "public"
 
