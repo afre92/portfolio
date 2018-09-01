@@ -1,4 +1,5 @@
-use Rack::Static,
+
+use Rack::SSL,
   :urls => ["/img","/css","/js","/scss","/vendor"],
   :root => "public"
 
