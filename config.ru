@@ -1,11 +1,8 @@
-require 'rack/ssl'
 
 
 use Rack::Static,
   :urls => ["/img","/css","/js","/scss","/vendor"],
   :root => "public"
-
-use Rack::SSL
 
 run lambda { |env|
   [
