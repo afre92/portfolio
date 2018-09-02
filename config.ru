@@ -1,3 +1,4 @@
+require 'rack/ssl'
 
 
 use Rack::Static,
